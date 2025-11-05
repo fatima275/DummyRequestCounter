@@ -15,6 +15,7 @@ spec:
       containers:
         - name: counter-app
           image: counter-app:latest
+          imagePullPolicy: Never  # ← ADD THIS LINE
           ports:
             - containerPort: 5000
           env:
